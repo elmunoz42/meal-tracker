@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Meal Tracker';
 
-  
+
+}
+
+export class Meal {
+
+  constructor()
 }
