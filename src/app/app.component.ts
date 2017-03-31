@@ -8,10 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Meal Tracker';
 
+  meals = [(new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354)),
+  new Meal("Fries", "I only ate half of them.", 365)];
 
 }
 
 export class Meal {
 
-  constructor()
+
+  constructor(public name: string, public details: string, public calories: number) {}
 }
