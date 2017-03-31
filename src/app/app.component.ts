@@ -11,9 +11,10 @@ export class AppComponent {
   masterMealList = [(new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354)),
   new Meal("Fries", "I only ate half of them.", 365)];
 
-  // addLog(newMealFromChild: Meal) {
-  // this.masterMealList.push(newMealFromChild);
-  // }
+  
+  addMeal(newMealFromChild: Meal) {
+  this.masterMealList.push(newMealFromChild);
+  }
 }
 
 export class Meal {

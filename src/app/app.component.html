@@ -22,7 +22,7 @@
     </div>
     <!-- left column -->
     <div class="col-sm-6">
-      <app-create-log></app-create-log>
+      <app-create-log (newMealSender)="addMeal($event)"></app-create-log>
     </div>
     <!-- right column -->
   </div>

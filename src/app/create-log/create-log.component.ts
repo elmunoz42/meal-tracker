@@ -9,11 +9,11 @@ import { Meal, AppComponent } from '../app.component';
 })
 export class CreateLogComponent implements OnInit {
 
-  @Output() newTaskSender = new EventEmitter();
+  @Output() newMealSender = new EventEmitter();
 
   submitForm(newName: string, newDetails: string, newCalories: any ){
     var newMealToAdd: Meal = new Meal(newName, newDetails, parseFloat(newCalories));
-    this.newTaskSender.emit(newMealToAdd);
+    this.newMealSender.emit(newMealToAdd);
   }
 
   constructor() { }
