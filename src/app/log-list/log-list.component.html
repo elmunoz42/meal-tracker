@@ -1,8 +1,8 @@
 <div align="center" class="well">
   <select (change)="onChange($event.target.value)" id="threshold">
-    <option value="all-meals" selected="selected">All Logged Meals</option>
-    <option value="lower-calorie">lower-calorie</option>
-    <option value="high-calorie">high-calorie</option>
+    <option value="all-meals" selected="selected">all logged meals</option>
+    <option value="lower-calorie">lower-calorie meals</option>
+    <option value="high-calorie">high-calorie meals</option>
   </select>
 </div>
 <!-- well -->
@@ -11,7 +11,7 @@
     <li>{{meal.name}}</li>
     <li>{{meal.details}}</li>
     <li>{{meal.calories}}</li>
-    <button (click)="editButtonHasBeenClicked(meal)">Edit!</button>
+    <button (click)="editButtonHasBeenClicked(meal);">Edit!</button>
   </ul>
 </div>
 <!-- end for loop -->

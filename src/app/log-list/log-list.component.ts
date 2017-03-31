@@ -14,6 +14,7 @@ export class LogListComponent {
 
   editButtonHasBeenClicked(mealToEdit: Meal) {
     this.clickSender.emit(mealToEdit);
+    
   }
 
   threshold: string = "all-meals";
