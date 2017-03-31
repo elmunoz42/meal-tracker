@@ -24,6 +24,11 @@ div.jumbotron {
   background-color: transparent;
 }
 
+#line {
+  height: 8px;
+  background-color: green;
+}
+
 div.well {
   margin-top: 10px;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIhXpuMKo0uFipZBhI5atO5fSVLTLHUqjMwBmMswYWiBZiWLj1-Q") no-repeat center center;

@@ -1,6 +1,6 @@
 # MealTracker
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+An app that allows user to log their meals and keep track of the caloric intake. The list of logged meals can be filtered to display lower-calorie meals and high-calorie meals. This project was generated with [angular-cli](https://github.com/angular/angular-cli).
 
 ## Development Plan
 
@@ -15,13 +15,25 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 * clone project from github repository https://github.com/elmunoz42/meal-tracker.git
 * in terminal  > project directory > run `npm install`.
-* npm list -g bower to check that bower version is 1.8.0 or later.
-* if above is true do bower init otherwise bower install.
-* in terminal  > project directory > run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `npm list -g` bower to check that bower version is 1.8.0 or later.
+* if above is true run `bower init` otherwise `bower install`.
+* in _terminal  > project directory >_ run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Deploying to GitHub Pages
+## Support and contact details
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+_617-780-8362_
+
+## Technologies Used
+
+* _Angular-Cli_
+* _Bower_
+* _TypeScript_
+
+### License
+
+*MIT*
+
+Copyright (c) 2017 **_Carlos Munoz Kampff_**
 
 ## Further help
 
