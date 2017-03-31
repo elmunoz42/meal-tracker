@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Meal } from '../app.component';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Meal, AppComponent } from '../app.component';
+
 
 @Component({
   selector: 'app-create-log',
@@ -8,8 +9,13 @@ import { Meal } from '../app.component';
 })
 export class CreateLogComponent implements OnInit {
 
-  title = "Log a meal."
-  testMeal = new Meal("test", "test", 1);
+  @Output() newTaskSender = new EventEmitter();
+
+  submitForm(newName: string, newDetails: string, newCalories: any ){
+    var newMealToAdd: Meal = new Meal(newName, newDetails, parseFloat(newCalories));
+    this.newTaskSender.emit(newMealToAdd);
+  }
+
   constructor() { }
 
   ngOnInit() {
