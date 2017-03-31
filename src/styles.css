@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+#top {
+  background: url("https://t3.ftcdn.net/jpg/00/83/57/70/240_F_83577099_cQ7t2bUTjpThtEXfTjw7XijfnFbgcoX5.jpg");
+}
+#bottom {
+  height: 800px;
+  background: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3PTVwWxL3dLUmVLJcVu6mDIGh0vgUQKKPVbIB_-zBCZDZJLTk");
+}
+#title {
+  margin: auto;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIhXpuMKo0uFipZBhI5atO5fSVLTLHUqjMwBmMswYWiBZiWLj1-Q") no-repeat center center;
+  background-size: 800px;
+  width: 500px;
+  border-radius: 10px;
+}
+#threshold {
+  padding-left: 25px;
+}
+h1 {
+  text-align: center;
+
+}
+
+div.jumbotron {
+  background-color: transparent;
+}
+
+div.well {
+  margin-top: 10px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIhXpuMKo0uFipZBhI5atO5fSVLTLHUqjMwBmMswYWiBZiWLj1-Q") no-repeat center center;
+  background-size: 800px;
+}
+div.intake-form-row {
+  margin-left: auto;
+}
