@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CreateLogComponent } from './create-log/create-log.component';
 import { EditLogComponent } from './edit-log/edit-log.component';
 import { LogListComponent } from './log-list/log-list.component';
+import { FilterByCaloriesPipe } from './filter-by-calories.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateLogComponent,
     EditLogComponent,
-    LogListComponent
+    LogListComponent,
+    FilterByCaloriesPipe
   ],
   imports: [
     BrowserModule,

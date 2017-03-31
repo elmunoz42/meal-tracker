@@ -1,12 +1,13 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from '../app.component';
+import { FilterByCaloriesPipe } from '../filter-by-calories.pipe';
 
 @Component({
   selector: 'app-log-list',
   templateUrl: './log-list.component.html',
   styleUrls: ['./log-list.component.css']
 })
-export class LogListComponent implements OnInit {
+export class LogListComponent {
 
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
@@ -15,9 +16,11 @@ export class LogListComponent implements OnInit {
     this.clickSender.emit(mealToEdit);
   }
 
-  constructor() { }
+  threshold: string = "all-meals";
 
-  ngOnInit() {
+  onChange(optionFromMenu) {
+    this.threshold = optionFromMenu;
   }
+
 
 }

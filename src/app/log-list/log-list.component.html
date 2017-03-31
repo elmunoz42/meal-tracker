@@ -1,5 +1,9 @@
-
-<div *ngFor="let meal of childMealList" class="well">
+<select (change)="onChange($event.target.value)">
+  <option value="all-meals" selected="selected">All Logged Meals</option>
+  <option value="lower-calorie">lower-calorie</option>
+  <option value="high-calorie">high-calorie</option>
+</select>
+<div *ngFor="let meal of childMealList | filterByCalories:threshold" class="well">
   <ul>
     <li>{{meal.name}}</li>
     <li>{{meal.details}}</li>
