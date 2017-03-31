@@ -1,3 +1,10 @@
-<p>
-  log-list works!
-</p>
+
+<div *ngFor="let meal of childMealList" class="well">
+  <ul>
+    <li>{{meal.name}}</li>
+    <li>{{meal.details}}</li>
+    <li>{{meal.calories}}</li>
+    <button >edit</button>
+  </ul>
+</div>
+<!-- end for loop -->

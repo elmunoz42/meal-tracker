@@ -11,16 +11,8 @@
   <!-- top row nav-->
   <div class="row">
     <div class="col-sm-6">
-      <div *ngFor="let meal of masterMealList" class="well">
-        <ul>
-          <li>{{meal.name}}</li>
-          <li>{{meal.details}}</li>
-          <li>{{meal.calories}}</li>
-          <button >edit</button>
-        </ul>
+        <app-log-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></app-log-list>
         <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
-      </div>
-      <!-- end for loop -->
     </div>
     <!-- left column -->
     <div class="col-sm-6">
