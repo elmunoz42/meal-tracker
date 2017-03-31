@@ -6,8 +6,8 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 |Status|Objective|Approach|
 |------|---------|--------|
-|Partial |1)User can view a list of foods they have logged.|a) Create constructor. b) Hard code a couple of instances for testing. c) Use *ngFor to loop through objects. Start with hard coded objects|
-|ToDo |2) User can log a food they have eaten by submitting a form with food name, calories and details. | a) Create an intake form component. b) Use (click)=”showForm()” function to show form. c) Use (click)=”submitHasBeenPressed()” function to toggle the form to hide.|
+|Done |1)User can view a list of foods they have logged.|a) Create constructor. b) Hard code a couple of instances for testing. c) Use *ngFor to loop through objects. Start with hard coded objects|
+|Partial |2) User can log a food they have eaten by submitting a form with food name, calories and details. | Create an intake form component. |
 |ToDo |3) User can click a food to edit its name, details or calories.| Use [(ngModule)] two way data-binding to update the chosen object.|
 |ToDo |4) User can choose options to view all foods, only high-calorie foods (more than 500 calories), or only lower-calorie foods (less than 500 calories).| Use a pipe function to filter the instances to be displayed.|
 
