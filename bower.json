@@ -1,0 +1,26 @@
+{
+  "name": "meal-tracker",
+  "description": "App that helps users track meals and calories.",
+  "main": "",
+  "authors": [
+    "Carlos Munoz Kampff <elmunoz42@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "2",
+    "cli"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
