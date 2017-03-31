@@ -16,7 +16,9 @@
           <li>{{meal.name}}</li>
           <li>{{meal.details}}</li>
           <li>{{meal.calories}}</li>
+          <button >edit</button>
         </ul>
+        <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
       </div>
       <!-- end for loop -->
     </div>

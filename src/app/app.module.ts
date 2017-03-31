@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CreateLogComponent } from './create-log/create-log.component';
+import { EditLogComponent } from './edit-log/edit-log.component';
+import { LogListComponent } from './log-list/log-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateLogComponent
+    CreateLogComponent,
+    EditLogComponent,
+    LogListComponent
   ],
   imports: [
     BrowserModule,
