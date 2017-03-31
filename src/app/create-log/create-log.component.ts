@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meal } from '../app.component';
 
 @Component({
   selector: 'app-create-log',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateLogComponent implements OnInit {
 
+  title = "Log a meal."
+  testMeal = new Meal("test", "test", 1);
   constructor() { }
 
   ngOnInit() {
