@@ -1,18 +1,18 @@
 <div class="well">
   <h1>New Meal Entry</h1>
-  <div class="intake-form-row">
+  <div align="center" class="intake-form-row">
     <label>What did you eat:</label><br>
     <input #newName><br>
   </div>
-  <div class="intake-form-row">
+  <div align="center" class="intake-form-row">
     <label>How did you feel about it:</label><br>
-    <input #newDetails><br>
+    <textarea rows="5" cols="60" #newDetails></textarea><br>
   </div>
-  <div class="intake-form-row">
+  <div align="center" class="intake-form-row">
     <label>How many calories do you estimate:</label><br>
     <input #newCalories><br>
   </div>
-  <div class="intake-form-row">
+  <div align="center" class="intake-form-row">
     <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">Log</button>
   </div>
 </div>

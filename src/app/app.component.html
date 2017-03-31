@@ -1,25 +1,35 @@
-
-<div class="container">
-  <nav class="row">
-    <div class="jumbotron">
-      <h1>
-        {{title}}
-      </h1>
-    </div>
-    <!-- jumbotron -->
-  </nav>
-  <!-- top row nav-->
-  <div class="row">
-    <div class="col-sm-6">
-        <app-log-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></app-log-list>
-    </div>
-    <!-- left column -->
-    <div class="col-sm-6">
-      <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
-      <app-create-log (newMealSender)="addMeal($event)"></app-create-log>
-    </div>
-    <!-- right column -->
+<div id="top">
+  <div class="container">
+    <nav class="row">
+      <div class="jumbotron">
+        <div id="title">
+          <h1>
+            {{title}}
+          </h1>
+        </div>
+      </div>
+      <!-- jumbotron -->
+    </nav>
+    <!-- top row nav-->
   </div>
-  <!-- row -->
+  <!-- container -->
+  <hr>
 </div>
-<!-- container -->
+<!-- top -->
+<div id="bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <app-log-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></app-log-list>
+      </div>
+      <!-- left column -->
+      <div class="col-sm-6">
+        <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
+        <app-create-log (newMealSender)="addMeal($event)"></app-create-log>
+      </div>
+      <!-- right column -->
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</div>
