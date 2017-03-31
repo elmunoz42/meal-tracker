@@ -1,17 +1,22 @@
 <div *ngIf="childSelectedMeal">
-  <div class="intake-form-row">
-    <label>What did you eat?</label><br>
-    <input [(ngModel)]="childSelectedMeal.name"><br>
+  <div class="well">
+    <h3>Update your entry</h3>
+    <div class="intake-form-row">
+      <label>What did you eat?</label><br>
+      <input [(ngModel)]="childSelectedMeal.name"><br>
+    </div>
+    <div class="intake-form-row">
+      <label>How did you feel about it?</label><br>
+      <input [(ngModel)]="childSelectedMeal.details"><br>
+    </div>
+    <div class="intake-form-row">
+      <label>How many calories do you estimate?</label><br>
+      <input [(ngModel)]="childSelectedMeal.calories"><br>
+    </div>
+    <div class="intake-form-row">
+      <button (click)="doneButtonClicked()">Done</button>
+    </div>
   </div>
-  <div class="intake-form-row">
-    <label>How did you feel about it?</label><br>
-    <input [(ngModel)]="childSelectedMeal.details"><br>
-  </div>
-  <div class="intake-form-row">
-    <label>How many calories do you estimate?</label><br>
-    <input [(ngModel)]="childSelectedMeal.name"><br>
-  </div>
-  <div class="intake-form-row">
-    <button (click)="doneButtonClicked()">Done</button>
-  </div>
+  <!-- well -->
 </div>
+<!-- if -->

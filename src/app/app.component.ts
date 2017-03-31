@@ -10,10 +10,17 @@ export class AppComponent {
   title = 'Meal Tracker';
   masterMealList = [(new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354)),
   new Meal("Fries", "I only ate half of them.", 365)];
-
-  
+  selectedMeal = null;
   addMeal(newMealFromChild: Meal) {
   this.masterMealList.push(newMealFromChild);
+  }
+
+  editMeal(clickedMeal) {
+    this.selectedMeal = clickedMeal;
+  }
+
+  finishedEditing() {
+    this.selectedMeal = null;
   }
 }
 

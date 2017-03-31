@@ -12,10 +12,10 @@
   <div class="row">
     <div class="col-sm-6">
         <app-log-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></app-log-list>
-        <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
     </div>
     <!-- left column -->
     <div class="col-sm-6">
+      <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
       <app-create-log (newMealSender)="addMeal($event)"></app-create-log>
     </div>
     <!-- right column -->
